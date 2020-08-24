@@ -9,13 +9,6 @@
       margin: 0;
     }
 
-    #active {
-      color: red;
-    }
-
-    .saw {
-      color: gray;
-    }
 
     a {
       color: black;
@@ -36,28 +29,37 @@
       margin: 0;
       padding: 20px;
     }
+
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+
+    #grid ol {
+      padding-left: 33px;
+    }
+
+    #article {
+      padding-left: 25px;
+    }
   </style>
 </head>
 
 <body>
   <h1><a href="index.html"> WEB</a></h1>
-  <ol>
-    <li><a href="tag.html" class="saw"> HTML</a></li>
-    <li><a href="2.html" class="saw" id="active"> CSS</a></li>
-    <li><a href="3.html"> JavaScript</a></li>
-  </ol>
-  <!--
-  <h1><a href="index.html"><font color="red">WEB</font></a></h1>
-  <ol>
-    <li><a href="tag.html"><font color="red">HTM</font>L</a></li>
-    <li><a href="2.html"><font color="red">CSS</font></a></li>
-    <li><a href="3.html"><font color="red">JavaScript</font></a></li>
-  </ol>
--->
-  <h2>CSS</h2>
-  <P>
-    I will learn this after finishing the HTML videos
-  </p>
+  <div id="grid">
+    <ol>
+      <li><a href="tag.html"> HTML</a></li>
+      <li><a href="2.html"> CSS</a></li>
+      <li><a href="3.html"> JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>CSS</h2>
+      <P>
+        I will learn this after finishing the HTML videos
+      </p>
+    </div>
+  </div>
 </body>
 
 </html>
