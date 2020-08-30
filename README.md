@@ -1,4 +1,4 @@
-# HTML
+# HTML/CSS/JavaScript
 # Atom 에디터 단축키 (Windows 기준)
 
 ## Editor
