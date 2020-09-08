@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    // 이름 있는 함수 - 유명 함수 - 선언적 함수
+    // 스크립트를 읽을 때 먼저 읽어짐
+
+    function testA() {
+      alert("testA")
+    }
+
+    // 이름 없는 함수 - 익명 함수 - 무명 함수
+    // 스크립트 내에서 절차적으로 읽어짐
+    var testB = function() {
+      alert("testB");
+    } //이름이 없어서 호출x. 변수에 넣어 사용.
+
+    testA();
+    testB();
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
