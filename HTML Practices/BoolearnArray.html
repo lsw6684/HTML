@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    var array = [200, 100, 50, 30, 100, 110, 20];
+    var isUnder20 = false;
+    for (var i in array) {
+      if (array[i] < 20) {
+        isUnder20 = true;
+        break;
+      }
+    }
+    if (isUnder20) {
+      alert("20보다 작은 값이 있다.");
+    } else {
+      alert("20보다 작은 값이 없다.");
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
