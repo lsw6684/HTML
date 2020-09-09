@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    function callNTimes(n, callback) { //콜백 함수는 마지막에 써준다.
+      for (var i = 0; i < n; i++) {
+        callback();
+      }
+    }
+
+    callNTimes(20, function() {
+      alert("출력합니다");
+    });
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
