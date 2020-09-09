@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    function returnFunction(data) {
+      var a = data * 1;
+      var b = data * 2;
+      var c = data * 3;
+
+      return function() {
+        alert(a);
+        alert(b);
+        alert(c);
+      };
+    }
+
+    returnFunction(10)();
+    returnFunction(20)();
+    returnFunction(30)();
+  </script>
+
+</body>
+
+</html>
