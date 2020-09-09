@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <script>
+    var product = {
+      제품명: '사이다',
+      성분: '설탕, 탄산',
+      가격: '2000',
+      용량: '850ml'
+    };
+    alert(product.제품명);
+    alert(product['성분']);
+    alert(product["가격"]);
+    for (var key in product) {
+      alert(product[key]);
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
