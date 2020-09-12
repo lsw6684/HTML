@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    function Rectangle(width, height) {
+      var _width = width;
+      var _height = height;
+      this.getWidth = function() {
+        return _width;
+      };
+      this.getHeight = function() {
+        return _height;
+      };
+      this.setWidth = function(value) {
+        if (value <= 0) {
+          return alert("0보다 작은건 ㄴㄴ");
+        }
+        _width = value;
+      };
+      this.setHeight = function(value) {
+        if (value <= 0) {
+          return alert("0보다 작은건 ㄴㄴ");
+        }
+        _height = value;
+      };
+    }
+    Rectangle.prototype.getArea = function() {
+      return this.getWidth() * this.getHeight();
+    };
+
+    var rectangle = new Rectangle(-2, 7);
+    alert('Area : ' + rectangle.getArea());
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
