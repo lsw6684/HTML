@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    function Student(이름, 국어, 수학, 영어, 과학) {
+      this.이름 = 이름;
+      this.국어 = 국어;
+      this.수학 = 수학;
+      this.영어 = 영어;
+      this.과학 = 과학;
+    }
+    Student.prototype.getSum = function() {
+      return this.국어 + this.수학 + this.영어 + this.과학;
+    };
+    Student.prototype.getAverage = function() {
+      return this.getSum() / 4;
+    };
+    Student.prototype.toString = function() {
+      return this.이름 + "\t" + this.getSum() + "\t\t" + this.getAverage() + "\n";
+    };
+  </script>
+  <script>
+    var students = [];
+    students.push(new Student("윤인성", 80, 97, 68, 80));
+    students.push(new Student("구자윤", 78, 80, 68, 80));
+    students.push(new Student("이승원", 58, 80, 80, 80));
+    students.push(new Student("최성민", 97, 80, 56, 67));
+    students.push(new Student("김민주", 80, 65, 80, 79));
+    students.push(new Student("성민석", 75, 56, 54, 80));
+    students.push(new Student("김희라", 80, 57, 45, 57));
+    students.push(new Student("진철식", 47, 80, 78, 65));
+    students.push(new Student("신민아", 90, 80, 87, 74));
+    students.push(new Student("구병민", 70, 70, 67, 80));
+  </script>
+
+  <script>
+    var output = "이름\t총합\t평균\n"
+    for (var i = 0; i < students.length; i++) {
+      output += students[i].toString();
+    }
+    console.log(output);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
