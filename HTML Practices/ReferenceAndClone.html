@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  //일반 값
+  <script>
+    var originalValue = 10;
+    var newValue = originalValue;
+    originalValue = 200;
+    alert(originalValue);
+    alert(newValue);
+  </script>
+
+  //reference
+
+  <script>
+    var originalArray = [1, 2, 3, 4];
+    var newArray = originalArray;
+    originalArray[0] = 200;
+    alert(originalArray);
+    alert(newArray);
+
+    newArray[0] = 1;
+    alert(originalArray);
+    alert(newArray);
+  </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
