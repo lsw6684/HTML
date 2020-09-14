@@ -1,7 +1,7 @@
 # HTML_CSS_JavaScript_jQuery_Node.js
-# Atom 에디터 단축키 (Windows 기준)
+## Atom 에디터 단축키 (Windows 기준)
 
-## Editor
+### Editor
 
 * `Ctrl + Shift + P`: 커맨드 팔레트 열기
 * `Ctrl + ,`: 설정 뷰
