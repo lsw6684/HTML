@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    var max = 0,
+      min = 0,
+      gcd = 0;
+    var a = 60,
+      b = 24;
+    if (a > b) {
+      max = a;
+      min = b;
+    } else {
+      max = b;
+      min = a;
+    }
+    for (var i = min; i >= 1; i--) {
+      if (max % i == 0 && min % i == 0) {
+        gcd = i;
+        alert(gcd);
+        break;
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
