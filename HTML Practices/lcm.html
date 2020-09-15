@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    var max,
+      min,
+      lcm;
+    var a = 24,
+      b = 60;
+    if (a > b) {
+      max = a;
+      min = b;
+    } else {
+      max = b;
+      min = a;
+    }
+    lcm = max;
+    for (var i = 1; i <= min; i++) {
+      if ((max * i) % min == 0) {
+        lcm = max * i;
+        break;
+      }
+    }
+    alert(lcm);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
