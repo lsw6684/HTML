@@ -1,5 +1,5 @@
-# HTML/CSS/JavaScript
-# Atom 에디터 단축키 (Windows 기준)
+# HTML_CSS_JavaScript_jQuery_Node.js
+## Atom 에디터 단축키 (Windows 기준)
 
 ## Editor
 
