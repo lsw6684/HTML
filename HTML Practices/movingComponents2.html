@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Document Object Model</title>
+</head>
+
+<body>
+  <div id="first-div">
+    <h1>Hello World</h1>
+  </div>
+  <hr />
+  <div id="second-div">
+  </div>
+  <script>
+    var firstDiv = document.getElementById("first-div");
+    var secondDiv = document.getElementById("second-div");
+    var header = document.querySelector("h1");
+
+    secondDiv.appendChild(header);
+  </script>
+
+</body>
+
+</html>
