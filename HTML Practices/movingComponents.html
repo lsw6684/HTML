@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+</head>
+
+<body>
+  <h1>Hello World</h1>
+  <script>
+    var header = document.querySelector("h1");
+    var body = document.body;
+
+    // body.removeChild(header); //헤더, 바디 다 필요.
+
+    header.parentNode.removeChild(header); // 헤더만 있으면 돼. 더 많이 사용
+  </script>
+
+</body>
+
+</html>
