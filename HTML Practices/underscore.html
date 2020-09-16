@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="underscore.js"> </script>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    var array = [{
+        이름: "바나나",
+        가격: 500
+      },
+      {
+        이름: "사과",
+        가격: 600
+      },
+      {
+        이름: "배",
+        가격: 300
+      }
+    ];
+    // 함수 방식
+
+    var output = _.sortBy(array, function(item) {
+      return item.가격;
+    });
+    // ==_.sortBy(array, (item) => item.가격)
+    console.log(output);
+  </script>
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
