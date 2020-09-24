@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <p id="myp">before</p>
+  <button id="myBtn">click me</button>
+  <script>
+    var x = document.getElementById("myBtn");
+    x.addEventListener("click", myfunc1);
+    x.addEventListener("click", myfunc2);
+
+    function myfunc1() {
+      document.getElementById("myBtn").innerHTML = "clicked";
+    }
+
+    function myfunc2() {
+      document.getElementById("myp").innerHTML = "after";
+    }
+  </script>
+</body>
+
+</html>
