@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function Rectaungle(w, h){
+        function Rectangle(w, h){
             this.width = w;
             this.height = h;
         }
-        Rectangle.prototype.getArea = function(){
-            return this.width * this.height};
+        Rectangle.prototype.getArea = function(){return this.width * this.height};
+        function Square(w){
+            this.width = w;
+            this.height = w;
 
+        }
+        Square.prototype = Object.create(Rectangle.prototype);
+        
+        var r = new Rectangle(3, 5);
+        var s = new Square(5);
+        alert(s instanceof Rectangle);
+        alert(r instanceof Square);
     </script>
 </head>
 <body>
