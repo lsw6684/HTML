@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+    function User(n,a){
+        var name = n;
+        var age = a;
+        this.getName = function() { return name; };
+        this.getAge = function() { return age; };
+        this.setName = function(n) {name = n;};
+        this.setAge = function(a) { age = a;};
+    }
+    var user = new User("test",21);
+    user.setName("cse");
+    user.setAge(22);
+    document.write("<h1>"+user.getName()+":"+user.getAge()+ "</h1>");
+</script>
+</body>
+</html>
