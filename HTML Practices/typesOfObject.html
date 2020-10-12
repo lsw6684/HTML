@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var first = {
+            oj1:1,
+            oj2:2
+        };
+        
+        var second = new Object();
+        second.oj1 = "1";
+        second.oj2 = "2";
+        
+        function third(oj1, oj2){
+            this.oj1 = "1";
+            this.oj2 = "2";
+        }
+        document.write(first.oj1);
+        document.write(second.oj2);
+        document.write(third.oj1);
+    </script>
+    
+</body>
+</html>
