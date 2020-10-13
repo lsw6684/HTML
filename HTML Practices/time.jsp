@@ -1,1 +1,1 @@
-<H1>Today's date: < %=(new java.util.Data())%> </H1>
+<H1>Today's date: <%=(new java.util.Data())%> </H1>
