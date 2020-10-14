@@ -1,4 +1,4 @@
-# HTML_CSS_JavaScript_jQuery_Node.js
+# HTML_CSS_JavaScript_jQuery_Node.js_Json
 ## Atom 에디터 단축키 (Windows 기준)
 
 ## Editor
