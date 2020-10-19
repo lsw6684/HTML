@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       var str = prompt("data");
+       document.write("<h1>전체 데이터 : "+str+"<br/>");
+       var arrdata = str.split(',');
+       var sum = 0;
+       var ma = 0;
+       for(i=0; i<arrdata.length; i++){
+           sum += Number(arrdata[i]);
+           document.write(arrdata[i]+"<br/>");
+           document.write("average is " + sum/arrdata.length + "<br/>");
+    
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
