@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         document.write('<table width="800" border="1">')
+            
+            for(var row = 0; row <=9; row++)
+            {
+                document.write('<tr>');
+                for(var col=0; col <=9; col++)
+                {
+                    if(row==0&&col==0)
+                    {
+   //                     document.write('<td>'+'</td>');
+
+
+                    } else if(col==0)
+                    {
+                        document.write('<td>'+row+'단</td>')       
+
+                    } else if(row==0){
+                        document.write('<td>'+'X'+col+'</td>');
+                    } else{
+                            document.write('<td>'+col+'X'+row+'='+row*col+'</td>');
+                    }    
+                }
+                document.write('</tr>');
+            }
+        
+
+
+        document.write('</table>')
+    </script>
+</body>
+</html>
