@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <article>
+
+    </article>
+    <input type="button" value = "fetch" onclick="
+    /*
+    fetch('html').then(function(response){  // 익명 함수. 이름 없. 
+        response.text().then(function(text){
+            document.querySelector('article').innerHTML=text;
+        })
+    })
+    */
+    //Asynchronous 비동기식 병렬. Ajax의 A
+    fetch('html').then(function(response){
+        console.log(response.status)
+        if(response.status == '404'){
+            alert('Not founded')
+        }
+    });
+    //then : 응답 끝난 다음 동작 정의
+    console.log(1);
+    console.log(11);
+    "/>
+</body>
+</html>
